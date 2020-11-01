@@ -1,0 +1,14 @@
+INSERT INTO `t_user` VALUES ('122', '122', '122', 'admin', NULL, NULL, NULL);
+INSERT INTO `t_user` VALUES ('123', '123', '123', 'admin', NULL, NULL, NULL);
+INSERT INTO `t_user` VALUES ('126', '123', '122', 'admin', NULL, NULL, NULL);
+INSERT INTO `t_user` VALUES ('131', '123', '122', 'admin', '湖北', '武汉', '1730863951@qq.com');
+INSERT INTO `t_user` VALUES ('a12345', NULL, '陶佳乐', 'admain', '17', '焦作市', '1730863@qq.com');
+INSERT INTO `t_user` VALUES ('a445', '1234', '陶佳乐', 'admain', '3', '上海市', '1730863951@qq.com');
+INSERT INTO `t_user` VALUES ('admin', '130', '123', '122', '湖北', '武汉', NULL);
+INSERT INTO `t_user` VALUES ('taojiu', '12345', '套九军', 'admain', '辽宁省', '朝阳市', '12213@qq.com');
+INSERT INTO `t_user` VALUES ('tewwe', '1234', '个人', 'admain', '重庆市', '重庆市', '52452@qq.com');
+INSERT INTO `t_user` VALUES ('tjl352', '1234', '陶佳乐', 'admain', '3', '上海市', '235232@qq.com');
+INSERT INTO `t_user` VALUES ('tjlewt', '1234', '热尔', 'admain', '重庆市', '重庆市', '235232@qq.com');
+INSERT INTO `t_user` VALUES ('treyte', '1234', '甄姬', 'admain', '江苏省', '盐城市', '5423@qq.com');
+INSERT INTO `t_user` VALUES ('weetw', '1234', '我让他微', 'admain', '河北省', '廊坊市', '5423@qq.com');
+INSERT INTO `t_user` VALUES ('weetw2', '1234', '让他', NULL, '河北省', '张家口市', '5423@qq.com');

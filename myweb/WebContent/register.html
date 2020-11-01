@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    <link href="css/login.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="divAll">
+        <div id="titles">
+            <p class="div-center">用户注册</p>
+        </div>
+        <div id="contents">
+            <form>
+                <div id="form-itemGroup">
+                    <p>
+                        <label for="userName">用户名</label>
+                        <input type="text" id="userName" name="userName" onblur="valuName()" oninput="valuName()" />
+                        <p>
+                            <span id="userName-err" class="red"></span>
+                        </p>
+                    </p>
+                </div>
+                <div id="form-itemGroup">
+                    <p>
+                        <label for="trueName">真实姓名</label>
+                        <input type="text" id="trueName" name="trueName" onblur="valtName()" oninput="valtName()" />
+                        <p>
+                            <span id="trueName-err" class="red"></span>
+                        </p>
+                    </p>
+                </div>
+                <div id="form-itemGroup">
+                    <p>
+                        <label for="e-mail">邮箱</label>
+                        <input id="e-mail" type="text" name="e-mail" onblur="valEmail()" />
+                        <span id="e-mail-err"></span>
+                    </p>
+                </div>
+                <div id="form-itemGroup">
+                    <p>
+                        <label for="province">省份</label>
+                        <select id="province" name="proviceCode" onchange="fillcity()">
+                            <option value="0">请选择省份</option>
+                        </select>
+
+                    </p>
+                </div>
+                <div id="form-itemGroup">
+                    <p>
+                        <label for="city">城市</label>
+                        <select id="city" name="cityCode">
+                            <option> 请选择城市</option>
+                        </select>
+
+                    </p>
+                </div>
+                <div id="form-itemGroup">
+                    <p>
+                        <label for="password1">密码</label>
+                        <input type="password" id="password1" name="password1" onblur="clickPssword()" onclick="" oninput="valPassword()" />
+                        <span id="password1-err"></span>
+                    </p>
+                </div>
+                <div id="form-itemGroup">
+                    <p>
+                        <label for="password2">确认密码</label>
+                        <input type="password" id="password2" name="password2" onblur="passwordcheck()" />
+                        <span id="password2-err"></span>
+                    </p>
+                </div>
+                <div id="form-itemGroup">
+                    <p>
+                        <button class="divBtn" type="button" value="注册" onclick="checklogin()">注册</button>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

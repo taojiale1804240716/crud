@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <div id="pageBody1">
+        <p><input type="text" v-model="name"></p>
+        <p>{{mail}}</p>
+    </div>
+    <div id="myname">
+        <select>
+            <option v-for="site in names">
+                {{site.name}}
+            </option>
+        </select>
+    </div>
+
+    <script>
+        //model
+        var myData = {
+            name: "fsdf",
+            mail: "fdsfasqq.com"
+        };
+
+        var names = [{
+                name: 'Runoob'
+            }, {
+                name: 'Google'
+            }, {
+                name: 'Taobao'
+            }
+
+        ];
+        console.log(names);
+
+        //viewmodel
+        var vue1 = new Vue({
+            el: "#pageBody1",
+            data: myData
+        });
+        var vue2 = new Vue({
+            el: "#myname",
+            data: names
+        });
+    </script>
+</body>
+
+</html>
